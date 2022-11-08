@@ -1,0 +1,79 @@
+
+/* HERO */
+@keyframes fade {
+  from{
+      opacity: 2;
+  }
+  to{
+      opacity: 0;
+  }
+}
+@keyframes slide-up {
+  from{
+      transform:translateY(100px);
+  }
+  to{
+      transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  from{
+      transform: translateX(100px);
+  }
+  to{
+      transform: translateX(0);
+  }
+}
+  @keyframes slide-right {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+h1{
+  animation: fade 1s ease-in, slide-right 2s ease-in-out;
+}
+.hero__informacion button{
+  opacity: 1;
+  animation: fade 1s ease-in, forwards, slide-up 1s ease-in-out;
+  animation-delay: 0.4s;
+}
+.hero__imagenes{
+  opacity: 1;
+  animation: fade 1s ease-in,forwards, slide-left 1s ease-in-out;
+  animation-delay:0,4s;
+}
+
+/* CATEGORIES */
+.categories :hover {
+    background: rgb(95, 95, 95);
+    transition: all 0.3s ease;
+  }
+  .categories img {
+    animation: rotate 4s infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    } 
+}
+
+/* PRODUCTS - DISCOVER */
+.product:hover,
+.discovercardsconteiner:hover{
+  box-shadow: 8px 8px 14px -8px rgba(255,255,255,0.4);
+}
+.btn-add{
+    transition: all 300ms ease-in;   
+}
+.btn-add:hover{
+    transform: scale(1.1,1.1);
+    transition: all 300ms ease-out;
+    animation-direction: alternate;
+}

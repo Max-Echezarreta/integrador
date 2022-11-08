@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Scream</title>
+    <link href="./assets/style.css" rel="stylesheet">
+    <link href="./assets/mediaqueries.css" rel="stylesheet">
+    <link href="./assets/animaciones.css" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->+
+<header>
+    <!-- logo -->
+    <img src="./assets/bonsai-1856731_960_720.webp" alt="logo green scream" class="logo">
+    <!-- navbar -->
+    <nav class="navbar">
+        <!-- menú hamburguesa -->
+        <label for="menu-toggle" class="menu-label">
+            <img src="./assets/Menu_Hambur.png" class="menu-icon">
+        </label>
+        <input type="checkbox"  id="menu-toggle">
+        <ul class="navbar-list">
+            <li><a href="#"><img src="./assets/home1.png" alt="icon home" ></a></li>
+         </ul>
+        <!-- cart -->    
+            <label for="cart-toggle" class="cart-label">
+                <img src="/assets/cart2.png" alt="carrito de compras" class="cart-icon"/>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <!-- cart items -->
+            <div class="cart">
+                <h2>fertilizantes organicos</h2>
+                <!-- item ejemplo 1     -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3 class="item-title">knf de frutas</h3>
+                        <p class="item-bid">Pera, banana, zanahoria, remolacha, anana, etc.</p>
+                        <span class="item-price">$1700 x 1L</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <!-- item ejemplo 2     -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3 class="item-title">Bokashi</h3>
+                        <p class="item-bid">Compost a base de hongos y melaza.</p>
+                        <span class="item-price">$600 x kg</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <!-- item ejemplo 3     -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3 class="item-title">Compost humus de lombriz.</h3>
+                        <p class="item-bid">Humus tamizado de lombriz.</p>
+                        <span class="item-price">$600 x kg</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <!-- item ejemplo 4     -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3 class="item-title">Knf Lab</h3>
+                        <p class="item-bid">Bacterias de acido lactico.</p>
+                        <span class="item-price">$1800 x L</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <!-- línea divisora, total y botón de compra -->
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$4700</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+            <div class="overlay"></div>
+            <li><a href="contact.html"><img class="overlay-img" src="./assets/user2.png" alt="contacto" ></a></li>
+        </ul>        
+    </nav>
+</header>
+<main>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero__informacion">
+            <h1>Salvar a la tierra empieza por salvar nuestros suelos.</h1>
+            <p>Los mejores fertilizantes naturales, para tu suelo.</p>
+            <button class="btn">VER MÀS</button>
+        </div>
+        <div class="hero__imagenes">
+            <div class="hero--plant">
+                <img src="/assets/plants-growing.jpg" alt="plantas creciendo">
+            </div>
+        </div>
+    </section>
+    <!-- DISCOVER -->
+    <section id="discover">
+        <h2>tipos de compost</h2>
+        <div class="discoverconteinercards">
+            <div class="discovercardsconteiner">
+                <img id="imag--card1" src="./assets/humus1.jpg" alt="imágen de humus">
+                <div class="discovercardinfo">
+                    <h3 class="h3">humus de lombris</h3>
+                    <p>Alto contenido de nitrogeno</p>
+                </div>
+            </div>
+            <div class="discovercardsconteiner">
+                <img id="imag---card2" src="./assets/bokashi.webp" alt="imágen de bokashi">
+                <div class="discovercardinfo">
+                    <h3 class="h3">Bokashi</h3>
+                    <p> Compost compuesto por altos contenido de potasio y nitrogeno.</p>
+                </div>
+            </div>
+            <div class="discovercardsconteiner">
+                <img id="imag---card3" src="./assets/turba rubia2.jpg" alt="imágen turba rubia">
+                <div class="discovercardinfo">
+                    <h3 class="h3">Turba Rubia</h3>
+                    <p>Alto contenido de potasio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORIES -->
+    
+    <!-- PRODUCTS -->
+    <section id="products">
+        <h2>Fertilizantes Liquidos</h2>
+        <div class="products-container">
+            <!-- Producto recomendado 1 -->
+            <div class="product">
+                <img src="./assets/Knf Lab.jpg" alt="knf. Lab">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>Knf Lab</h3>
+                        <p>Funguicida de acido lactico</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 1800 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 2 -->             
+            <div class="product">
+                <img src="./assets/knf fruta.jpg" alt="Knf de frutas">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>Fertilizante knf de frutas</h3>
+                        <p>alto en potasio.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 1700 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 3 -->
+            <div class="product">
+                <img src="./assets/biol.jpg" alt="Biol">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>Fertilizante Biol</h3>
+                        <p>Nitrogeno elevado.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 1800 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 4 -->
+            <div class="product">
+                <img src="./assets/humus liquido.jpg" alt="Humus liquido">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>Humus liquido</h3>
+                        <p>microorganismos y nitrogeno.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 1200 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 5 -->
+            <div class="product">
+                <img src="./assets/alga crecimiento.jpg" alt="Estimulante crecimiento">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>estimulante crecimiento</h3>
+                        <p>estimulante kelp.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 3000 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 6 -->
+            <div class="product">
+                <img src="./assets/alga floracion.jpg" alt="Estimulante Flora">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>estimulante floracion.</h3>
+                        <p>estimulante kelp</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 3200 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 7 -->
+            <div class="product">
+                <img src="./assets/abono raices.jpg" alt="Enraizante.">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>estimulante raices</h3>
+                        <p>aumenta enraizado.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>$ 1500 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto recomendado 8 -->
+            <div class="product">
+                <img src="./assets/melaza1.jpg" alt="Melaza">
+                <div class="product-info">
+                    <div class="product-top">
+                        <h3>Melaza</h3>
+                        <p>Melaza y microorganismos.</p>
+                    </div>
+                    <div class="product-bot">
+                        <span>2000 x L</span>
+                        <button class="btn-add">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+</main>
+<!-- FOOTER -->
+<footer>
+    <div>
+        <ul class="footer-links">
+            <li><a href="#">Terminos de Uso</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">Soporte</a></li>
+        </ul>
+    </div>
+    <p>Hecho por Max Echezarreta <span>maxechezarreta@gmail.com</span> </p>
+</footer>
+</body>
+</html>
