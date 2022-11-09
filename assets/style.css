@@ -500,9 +500,26 @@ footer span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 150px;
+    font-weight: 800;
+    gap: 50px;
 }
 
 
+.conteiner-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    gap: 15px;
+    font-size: 30px;
+}
 
+.container-contact{
+    padding-top: 50px;
+    font-weight: 900;
+}
 
+#contraseña {
+    margin-right: 60px;
+}
