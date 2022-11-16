@@ -4,7 +4,7 @@
     --bg-negro: #131415;
     --bg-gris: #000000;
     --texto: #1ca005;
-    --bg-amarillo: #4d4d4d;
+    --bg-amarillo: #d0ff00;
     --bg-rojo: #FC2933;
     --bg-gradient: linear-gradient(to right, #9dff00, #FB103D);
     --bg-green: green;
@@ -48,6 +48,18 @@ header{
     width: 76px;
     height: 79px;
 }
+
+#logo {
+    color: #167f03;
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-container{
+    height: 500px;
+}
+
 /* NAVBAR */
 
 
@@ -246,6 +258,7 @@ header{
     letter-spacing: 0.5px;
     text-align: center;
     border-style: none;
+    cursor: pointer;
 }
 .hero__imagenes{
     display: flex;
@@ -292,7 +305,7 @@ margin-right: 50%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background: var(--bg-gris);
+    background: black;
     gap: 4px;
 }
 
@@ -431,14 +444,14 @@ padding: 31px 0;
 .h3{
     font-size: 15px;
     font-weight: 500;
-    color: var(--texto);
+    color: var(--bg-amarillo);
 }
 .product-top p,
 .discovercardinfo p{
     font-size: 14px;
     letter-spacing: 0.5px;
-    color: rgb(255, 255, 255);
-    opacity: 30%;
+    color: wheat;
+    padding-bottom: 10px;
 }
 .product-bot{
     display: flex;
@@ -465,14 +478,38 @@ padding: 31px 0;
     border-style: none;
     padding: 7px 15px 7px 16px;
 }
+
+/* ABOUT US */
+
+.about-us {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-weight: 900;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+
+.about-us h2 {
+    color: #147004;
+}
+
+.about-us p {
+    color: #FC2933;
+}
+
+
+
 /* FOOTER */
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     padding: 60px 0;
+    background-color: var(--bg-gris);
 }
 footer a,
 footer p{
